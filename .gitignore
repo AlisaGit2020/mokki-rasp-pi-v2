@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/mokki-rasp-pi-v2.iml
+/.idea/vcs.xml
