@@ -1,13 +1,17 @@
 import React from 'react';
-import BasicLayout from "./layouts/BasicLayout";
+import Layout from "./layouts/Layout";
+import Content from "./layouts/Content";
 
-function App() {
+
+const App: React.FC = () => {
     return (
-        <div>
-            <BasicLayout />
-            {/* Tässä voit lisätä muita komponentteja */}
-        </div>
+        <Layout title={"Mökki"}>
+            <Content>
+                <h1>Tämä on sisältöä</h1>
+                <p>Tämä on esimerkki sisällöstä</p>
+            </Content>
+        </Layout>
     );
-}
+};
 
 export default App;
