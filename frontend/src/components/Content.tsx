@@ -10,7 +10,7 @@ const Content = ({ children }: ContentProps) => {
 
     return (
         <main>
-        <Container maxWidth="lg">
+        <Container sx={{marginTop:10}} maxWidth="lg">
         {children}
         </Container>
         </main>

@@ -1,14 +1,14 @@
 import React from 'react';
-import Layout from "./layouts/Layout";
-import Content from "./layouts/Content";
+import Layout from "./components/Layout";
+import Content from "./components/Content";
+import {Button} from "@mui/material";
 
 
 const App: React.FC = () => {
     return (
         <Layout title={"Mökki"}>
             <Content>
-                <h1>Tämä on sisältöä</h1>
-                <p>Tämä on esimerkki sisällöstä</p>
+                <Button title={"Button"} variant={"contained"} color={"info"} >Button</Button>
             </Content>
         </Layout>
     );
