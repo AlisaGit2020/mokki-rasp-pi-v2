@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Content from './Content';
-import {AppBar, Button, CssBaseline, IconButton, Stack, Toolbar, Typography} from "@mui/material";
-import {House} from "@mui/icons-material";
+import {AppBar, Button, CssBaseline, IconButton, Stack, Toolbar} from "@mui/material";
+import {ElectricalServices, House} from "@mui/icons-material";
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -19,19 +19,11 @@ const Layout = ({ children, title }: LayoutProps) => {
                 <Toolbar>
                     <Stack direction={"row"} spacing={2} alignItems={"center"} sx={{ justifyContent: 'space-between', width: '100%' }}>
                         <Stack direction={"row"} spacing={1} alignItems={"center"}>
-                            <IconButton size={"large"}>
-                                <House></House>
+                            <IconButton size={"large"} color={"inherit"} href={"/"} >
+                                <House></House> {title}
                             </IconButton>
-                            <Typography
-                                component="div"
-                                variant="h6"
-                                color="inherit"
-                                noWrap
-                            >
-                                {title}
-                            </Typography>
                         </Stack>
-                        <Button color={"inherit"}>Inverter</Button>
+                        <Button color={"inherit"} href={"inverter"}><ElectricalServices></ElectricalServices> Inverter</Button>
                     </Stack>
                 </Toolbar>
             </AppBar>
