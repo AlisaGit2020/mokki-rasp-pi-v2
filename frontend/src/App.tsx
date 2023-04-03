@@ -1,14 +1,21 @@
 import React from 'react';
 import Layout from "./components/Layout";
 import Content from "./components/Content";
-import {Button} from "@mui/material";
+import Inverter from "./Inverter";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 
 const App: React.FC = () => {
+
     return (
         <Layout title={"Mökki"}>
             <Content>
-                <Button title={"Button"} variant={"contained"} color={"info"} >Button</Button>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path={"/"} element={<Inverter />} />
+                        <Route path={"inverter"} element={<Inverter />} />
+                    </Routes>
+                </BrowserRouter>
             </Content>
         </Layout>
     );
