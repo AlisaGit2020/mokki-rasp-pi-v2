@@ -106,3 +106,4 @@ dist
 /.idea/modules.xml
 /.idea/mokki-rasp-pi-v2.iml
 /.idea/vcs.xml
+/api/.env
