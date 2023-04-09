@@ -8,12 +8,12 @@ export class InverterController {
   @Get('inverter/status/on')
   setOn(): string {
     this.inverterService.setOn();
-    return 'on';
+    return '{on}';
   }
 
   @Get('inverter/status/off')
   setOff(): string {
     this.inverterService.setOff();
-    return 'off'
+    return '{off}'
   }
 }

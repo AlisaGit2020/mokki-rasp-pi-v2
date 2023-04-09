@@ -5,6 +5,6 @@ import { InverterService } from './inverter/InverterService';
 @Module({
   imports: [],
   controllers: [InverterController],
-  providers: [InverterService],
+  providers: [InverterService]
 })
 export class AppModule {}
