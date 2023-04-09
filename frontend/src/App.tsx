@@ -4,7 +4,6 @@ import Content from "./components/Content";
 import Inverter from "./Inverter";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
-
 const App: React.FC = () => {
 
     return (
